@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>송미령 포트폴리오</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css" />
+</head>
+
+<body>
+    <div class="wrap" id="fullpage">
+        <section class="section"><img src="img1/song.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img1/song2.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img1/song3.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img1/song4.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img1/song5.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img2/song6.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img2/song7.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img2/song8.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img2/song9.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img2/song10.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img3/song11.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img3/song12.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img3/song13.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img3/song14.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img3/song15.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img4/song16.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img4/song17.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img4/song18.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img4/song19.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img4/song20.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img5/song21.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img5/song22.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img5/song23.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img5/song24.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img5/song25.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img6/song26.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img6/song27.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><img src="img6/song28.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><a href="https://song-mi-ryoung.github.io/web1/"><img src="img6/song29.jpg" alt="송미령 포트폴리오"></a></section>
+        <section class="section"><img src="img6/song30.jpg" alt="송미령 포트폴리오"></section>
+        <section class="section"><a href="https://song-mi-ryoung.github.io/web2/"><img src="img6/song31.jpg" alt="송미령 포트폴리오"></a></section>
+    </div>
+
+
+    <script>
+        new fullpage('#fullpage', {
+            navigation: true,
+            responsiveWidth: 700,
+            anchors: ['home', 'about-us', 'contact'],
+            parallax: true,
+            onLeave: function (origin, destination, direction) {
+                console.log("Leaving section" + origin.index);
+            },
+        });
+    </script>
+</body>
+
+</html>
